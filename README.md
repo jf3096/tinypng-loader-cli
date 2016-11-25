@@ -20,9 +20,9 @@ npm install tinypng-loader-cli -g
 
 ### How to use
 
-open your command line or shell and key in,
+Open your command line or shell and key in,
 
-#### `tinypng-loader-cli -s <source of your images> -d <destination of your images>`
+`tinypng-loader-cli -s <source of your images> -d <destination of your images>`
 
 ### Example
 
@@ -40,7 +40,7 @@ open your sheel from <b>demo</b> and enter your command:
 
 <b>`tinypng-loader-cli -s images/**/* -d dist`</b>
 
-OR using absolute path
+OR using absolute path,
 
 <b>`tinypng-loader-cli -s c:/demo/images/**/* -d c:/demo/dist`</b>
 
