@@ -7,7 +7,7 @@ such as gulp-image, imagemin-webpack, most of them relied on optipng plugin. Thi
 around 5%-10%. [tinypng.com](https://tinypng.com) uses smart lossy compression techniques to reduce the file size of PNG/JP(E)G files
 with around <b>60%-70%</b> file size reduction.
 
-The tinypng-loader-cli is derived from my [tinypng-loader](https://github.com/jf3096/tinypng-loader)
+The tinypng-loader-cli is derived from my [tinypng-loader](https://github.com/jf3096/tinypng-loader).
 
 ### Compatible Image
 * PNG
@@ -36,13 +36,13 @@ c:/demo              # project name
     ├── 3.jpg
 ```
 
-open your sheel from <b>demo</b> and enter your command:
+open your sheel from demo and enter your command:
 
-<b>`tinypng-loader-cli -s images/**/* -d dist`</b>
+`tinypng-loader-cli -s images/**/* -d dist`
 
 OR using absolute path,
 
-<b>`tinypng-loader-cli -s c:/demo/images/**/* -d c:/demo/dist`</b>
+`tinypng-loader-cli -s c:/demo/images/**/* -d c:/demo/dist`
 
 it takes a minutes and your will see the progress in command.
 
