@@ -34,16 +34,16 @@ function getCliParams() {
 }
 function exec(source, dest) {
     configureCommander();
+    if (arguments.length === 0) {
+        const cliParams = getCliParams();
+        source = cliParams.source;
+        dest = cliParams.source;
+    }
     if (!source) {
         throw `please provide source path`;
     }
     if (!dest) {
         throw `please provide destination path`;
-    }
-    if (arguments.length === 0) {
-        const cliParams = getCliParams();
-        source = cliParams.source;
-        dest = cliParams.source;
     }
     gulpExec_1.default(source, dest);
 }
