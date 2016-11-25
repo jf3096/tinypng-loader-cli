@@ -1,4 +1,4 @@
-# WARNING! under maintanance, will be fixed it recently.
+# WARNING! under maintanance, will be released soon.
 
 # tinypng-loader-cli
 
