@@ -1,0 +1,16 @@
+{
+  "name": "tinypng-loader-cli",
+  "version": "0.0.2",
+  "description": "",
+  "bin": "./bin/index.js",
+  "main": "index.js",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "cwd": "^0.10.0",
+    "gulp": "^3.9.1",
+    "tinypng-loader": "*"
+  },
+  "devDependencies": {},
+  "author": "Ailun She",
+  "license": "MIT"
+}

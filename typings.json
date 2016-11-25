@@ -1,0 +1,7 @@
+{
+  "globalDependencies": {
+    "commander": "registry:dt/commander#2.3.0+20160317120654",
+    "gulp": "registry:dt/gulp#3.8.0+20160907112908",
+    "node": "registry:dt/node#6.0.0+20161110151007"
+  }
+}
