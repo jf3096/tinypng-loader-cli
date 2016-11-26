@@ -1,4 +1,5 @@
 # tinypng-loader-cli
+[![NPM](https://nodei.co/npm/wx-compile-key.png)](https://www.npmjs.com/package/wx-compile-key)
 
 ##Introduction
 PNG is useful because it's the only widely supported format that can store partially transparent images.
