@@ -34,6 +34,7 @@ function getCliParams(): ICliParams {
     const source = (program as ICliParams&IExportedCommand).source;
     const dest = (program as ICliParams&IExportedCommand).dest;
     if (!source || !dest) {
+        program.outputHelp();
         throw `please provide source and destination path`;
     }
     return {
@@ -48,9 +49,11 @@ export default function exec(cliParams?: ICliParams) {
         cliParams = cliParams || getCliParams();
     }
     if (!cliParams.source) {
+        program.outputHelp();
         throw `please provide source path`;
     }
     if (!cliParams.dest) {
+        program.outputHelp();
         throw `please provide destination path`;
     }
     execTinyPng(cliParams.source, cliParams.dest);

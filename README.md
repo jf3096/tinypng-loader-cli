@@ -1,7 +1,7 @@
 # tinypng-loader-cli
 [![NPM](https://nodei.co/npm/tinypng-loader-cli.png)](https://www.npmjs.com/package/tinypng-loader-cli)
 
-##Introduction
+## Introduction
 PNG is useful because it's the only widely supported format that can store partially transparent images.
 When app moves to production stage, image compression is essential. However, according to my experience using
 such as gulp-image, imagemin-webpack, most of them relied on optipng plugin. This compression algorithm only help reduce
@@ -24,6 +24,17 @@ npm install tinypng-loader-cli -g
 Open your command line or shell and key in,
 
 `tinypng-loader-cli -s <source of your images> -d <destination of your images>`
+
+```
+  Usage: index [options]
+
+  Options:
+
+    -h, --help            output usage information
+    -V, --version         output the version number
+    -s, --source <value>  source of images required to process
+    -d, --dest <value>    destination of image output
+```
 
 ### Example
 

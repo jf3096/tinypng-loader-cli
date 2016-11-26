@@ -21,6 +21,7 @@ function getCliParams() {
     const source = program.source;
     const dest = program.dest;
     if (!source || !dest) {
+        program.outputHelp();
         throw `please provide source and destination path`;
     }
     return {
@@ -34,9 +35,11 @@ function exec(cliParams) {
         cliParams = cliParams || getCliParams();
     }
     if (!cliParams.source) {
+        program.outputHelp();
         throw `please provide source path`;
     }
     if (!cliParams.dest) {
+        program.outputHelp();
         throw `please provide destination path`;
     }
     gulpExec_1.default(cliParams.source, cliParams.dest);
