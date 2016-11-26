@@ -1,12 +1,11 @@
 {
   "name": "tinypng-loader-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "bin": "./bin/index.js",
   "main": "index.js",
   "dependencies": {
     "commander": "^2.9.0",
-    "cwd": "^0.10.0",
     "gulp": "^3.9.1",
     "tinypng-loader": "*"
   },

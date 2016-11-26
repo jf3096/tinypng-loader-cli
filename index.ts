@@ -8,7 +8,7 @@ import * as path from 'path';
 import ICommand = commander.ICommand;
 import IExportedCommand = commander.IExportedCommand;
 const cliPath = process.cwd();
-const packageContent = Package.getInstance();
+const packageContent = require('./package.json');
 
 interface ICliParams {
     source: string;

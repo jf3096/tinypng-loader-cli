@@ -1,13 +1,9 @@
 "use strict";
-/**
- * Created by allen on 2016/11/25.
- */
-const Package_1 = require('./libs/models/Package');
 const program = require('commander');
 const gulpExec_1 = require('./libs/gulpExec');
 const path = require('path');
 const cliPath = process.cwd();
-const packageContent = Package_1.default.getInstance();
+const packageContent = require('./package.json');
 function configureCommander() {
     program
         .version(packageContent.version)
