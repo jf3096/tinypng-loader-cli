@@ -1,5 +1,3 @@
-# WARNING! under maintanance, will be released soon.
-
 # tinypng-loader-cli
 
 ##Introduction

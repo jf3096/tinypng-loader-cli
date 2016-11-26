@@ -32,20 +32,18 @@ function getCliParams() {
         dest: convertPath2Absolute(dest)
     };
 }
-function exec(source, dest) {
+function exec(cliParams) {
     configureCommander();
     if (arguments.length === 0) {
-        const cliParams = getCliParams();
-        source = cliParams.source;
-        dest = cliParams.source;
+        cliParams = cliParams || getCliParams();
     }
-    if (!source) {
+    if (!cliParams.source) {
         throw `please provide source path`;
     }
-    if (!dest) {
+    if (!cliParams.dest) {
         throw `please provide destination path`;
     }
-    gulpExec_1.default(source, dest);
+    gulpExec_1.default(cliParams.source, cliParams.dest);
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = exec;

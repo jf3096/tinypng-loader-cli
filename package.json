@@ -1,6 +1,6 @@
 {
   "name": "tinypng-loader-cli",
-  "version": "0.0.5",
+  "version": "1.0.1",
   "description": "",
   "bin": "./bin/index.js",
   "main": "index.js",
