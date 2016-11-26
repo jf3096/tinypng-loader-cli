@@ -42,18 +42,16 @@ function getCliParams(): ICliParams {
     }
 }
 
-export default function exec(source?: string, dest?: string) {
+export default function exec(cliParams?: ICliParams) {
     configureCommander();
     if (arguments.length === 0) {
-        const cliParams = getCliParams();
-        source = cliParams.source;
-        dest = cliParams.source;
+        cliParams = cliParams || getCliParams();
     }
-    if (!source) {
+    if (!cliParams.source) {
         throw `please provide source path`;
     }
-    if (!dest) {
+    if (!cliParams.dest) {
         throw `please provide destination path`;
     }
-    execTinyPng(source, dest);
+    execTinyPng(cliParams.source, cliParams.dest);
 }
