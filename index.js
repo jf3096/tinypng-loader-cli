@@ -49,4 +49,5 @@ function exec(source, dest) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = exec;
+exec();
 //# sourceMappingURL=index.js.map

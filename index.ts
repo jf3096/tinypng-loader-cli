@@ -57,3 +57,5 @@ export default function exec(source?: string, dest?: string) {
     }
     execTinyPng(source, dest);
 }
+
+exec();
