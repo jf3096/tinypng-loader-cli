@@ -8,6 +8,7 @@
     "commander": "^2.9.0",
     "cwd": "^0.10.0",
     "gulp": "^3.9.1",
+    "queue": "^4.0.0",
     "tinypng-loader": "*"
   },
   "devDependencies": {},
