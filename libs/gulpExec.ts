@@ -18,10 +18,9 @@ export default function execTinyPng({source, dest, concurrency}:CliParams): void
             })
         });
         q.start();
-        q.on('success', function (result, job) {
+        q.on('success', (result, job) => {
             console.log(q.length);
         });
     });
-
 }
 

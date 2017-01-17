@@ -3,6 +3,7 @@
  * Created by allen on 2016/12/6.
  */
 const path = require('path');
+const configs_1 = require('../configs');
 const cliPath = process.cwd();
 class CliParams {
     constructor(rawCliParams) {
@@ -31,13 +32,15 @@ class CliParams {
         if (!concurrency) {
             throw `concurrency is invalid, concurrency = ${concurrency}. concurrency must be a valid number type between 1-100 (inclusive)`;
         }
-        if (concurrency < 1 || concurrency > 100) {
+        if (concurrency < CliParams.LOWER_LIMIT_CONCURRENCY || concurrency > CliParams.UPPER_LIMIT_CONCURRENCY) {
             throw `concurrency is out of range, concurrency = ${concurrency}. concurrency must be a valid number type between 1-100 (inclusive)`;
         }
         return { source, dest, concurrency };
     }
 }
-CliParams.DEFAULT_CONCURRENCY = 100;
+CliParams.DEFAULT_CONCURRENCY = configs_1.default.concurrency;
+CliParams.UPPER_LIMIT_CONCURRENCY = configs_1.default.upperLimit;
+CliParams.LOWER_LIMIT_CONCURRENCY = configs_1.default.lowerLimit;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = CliParams;
 //# sourceMappingURL=CliParams.js.map

@@ -28,7 +28,7 @@ function execTinyPng({ source, dest, concurrency }) {
             });
         });
         q_1.default.start();
-        q_1.default.on('success', function (result, job) {
+        q_1.default.on('success', (result, job) => {
             console.log(q_1.default.length);
         });
     });

@@ -3,10 +3,12 @@
  */
 
 interface IQueue {
-    push: (cb?)=>void
+    push: (cb?) => void
     timeout: number;
     concurrency: number;
-    start: (onCompleteOrErr?)=>void;
+    start: (onCompleteOrErr?) => void;
+    on(event: string, callback: Function);
+    length: number;
 }
 
 const queue = require('queue');

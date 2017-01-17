@@ -4,5 +4,11 @@
     "glob": "registry:dt/glob#5.0.10+20160317120654",
     "gulp": "registry:dt/gulp#3.8.0+20160907112908",
     "node": "registry:dt/node#6.0.0+20161110151007"
+  },
+  "dependencies": {
+    "minimatch": "registry:npm/minimatch#3.0.0+20160723033700",
+    "minimatch/index": "registry:dt/minimatch/index#2.0.8+20160427172752",
+    "orchestrator": "registry:npm/orchestrator#0.3.7+20160723033700",
+    "vinyl": "registry:npm/vinyl#1.2.0+20161017220031"
   }
 }
