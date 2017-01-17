@@ -1,6 +1,6 @@
 {
   "name": "tinypng-loader-cli",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "bin": "./bin/index.js",
   "main": "index.js",
@@ -16,7 +16,7 @@
   "license": "MIT",
   "configs": {
     "concurrency": {
-      "default": 100,
+      "concurrency": 100,
       "upperLimit": 100,
       "lowerLimit": 0
     }

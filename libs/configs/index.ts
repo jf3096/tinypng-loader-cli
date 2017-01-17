@@ -4,6 +4,10 @@ interface IConfig {
     lowerLimit: number;
 }
 
-const configs: IConfig = require('../../package.json').configs;
+const configs: IConfig = {
+    concurrency: 100,
+    upperLimit: 100,
+    lowerLimit: 0
+};
 
 export default configs;
