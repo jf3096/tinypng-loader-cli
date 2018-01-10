@@ -16,7 +16,7 @@ The tinypng-loader-cli is derived from my [tinypng-loader](https://github.com/jf
 
 ### Get Started
 ```bash
-npm install tinypng-loader-cli@1.0.5 -g
+npm install tinypng-loader-cli -g
 ```
 
 ### How to use
