@@ -1,12 +1,11 @@
 /**
  * Created by allen on 2016/11/25.
  */
-import Package from './libs/models/Package';
 import * as program from 'commander';
 import execTinyPng from './libs/gulpExec';
 import * as path from 'path';
-import ICommand = commander.ICommand;
 import IExportedCommand = commander.IExportedCommand;
+
 const cliPath = process.cwd();
 const packageContent = require('./package.json');
 
@@ -31,8 +30,8 @@ function convertPath2Absolute(rawPath: string): string {
 }
 
 function getCliParams(): ICliParams {
-    const source = (program as ICliParams&IExportedCommand).source;
-    const dest = (program as ICliParams&IExportedCommand).dest;
+    const source = (program as ICliParams & IExportedCommand).source;
+    const dest = (program as ICliParams & IExportedCommand).dest;
     if (!source || !dest) {
         program.outputHelp();
         throw `please provide source and destination path`;
