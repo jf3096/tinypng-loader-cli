@@ -11,5 +11,8 @@
   },
   "devDependencies": {},
   "author": "Ailun She",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
 }
